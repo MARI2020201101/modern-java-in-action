@@ -19,6 +19,7 @@ public class TempSubscription implements Flow.Subscription {
             }catch(Exception e){
                 //데이터 전송 실패시 에러를 전달한다.
                 subscriber.onError(e);
+                break;
             }
         }
     }

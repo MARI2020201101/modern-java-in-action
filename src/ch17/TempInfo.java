@@ -3,12 +3,12 @@ package ch17;
 import java.util.Random;
 
 public class TempInfo {
-
+//전달해야 할 데이터 객체
     private String town;
     private int temp;
     private static Random random = new Random();
 
-    private TempInfo(String town , int temp){
+    public TempInfo(String town, int temp){
         this.town=town;
         this.temp = temp;
     }
