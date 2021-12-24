@@ -35,7 +35,7 @@ public class ExecutorServiceExample {
 
         System.out.println("result left : " + result1);
         System.out.println("result right : " + result2);
-        //찍히는건 . 일찍 찍히네.. 메인이 안기달려줌.. (void 메서드 라서??) 
+        //찍히는건 . 일찍 찍히네.. 메인이 안기달려줌.. (void 메서드 라서??)
         service.shutdown();
     }
 
