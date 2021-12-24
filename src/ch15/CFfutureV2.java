@@ -5,16 +5,16 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class CFfuture {
+public class CFfutureV2 {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         int x = 1337;
-        CompletableFuture<Integer> a = new CompletableFuture<>();
-        executorService.submit(()->a.complete(work1(x)));
-        int b = work2(x);
-        System.out.println(a.get() + " , " + b);
+        CompletableFuture<Integer> b = new CompletableFuture<>();
+        executorService.submit(()-> b.complete(work2(x)));
+        int a = work1(x);
+        System.out.println(a + " , " + b.get());
 
         executorService.shutdown();
     }
