@@ -13,6 +13,10 @@ public class ProcessFilerV2 {
         System.out.println(s);
 
 //깔끔하게 해결되었당 헤헤.
+
+
+        //클라이언트로서 사용하는 경우 - 에는 내가 인터페이스를 수정할수없으므로. 이럴때에는 wrapper메서드를 하나더
+        //정의해서 사용하도록 한다
     }
 
     public static String processFile(String fileName , ProcessFileFunction p){
