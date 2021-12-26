@@ -24,6 +24,14 @@ public class ComparatorEx {
 
         appleList.sort(Comparator.comparingInt((Apple::getWeight)));
         System.out.println(appleList);
+        System.out.println();
+
+        appleList.add(new Apple("new apple", Apple.Color.RED,150));
+        appleList.sort(
+                Comparator.comparingInt(Apple::getWeight)
+                .reversed()
+                .thenComparing(Apple::getName)); //String이 이미 구현해둔듯?
+        System.out.println(appleList);
 
     }
 }
