@@ -1,7 +1,5 @@
 package ch03;
 
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 public class IntegralWithFunction {
