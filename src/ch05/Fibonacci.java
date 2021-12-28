@@ -31,6 +31,6 @@ public class Fibonacci {
                 .map(i -> i[0])
                 .collect(Collectors.toList());
         System.out.println(fiboList3);
-        
+
     }
 }
